@@ -8,7 +8,6 @@
 /* Basic Layout */
 body {
     font-family: 'Source Code Pro', monospace;
-    display: flex;
 }
 
 /* Sidebar Navigation */
@@ -78,10 +77,26 @@ footer {
     footer {
         display: none; /* Hide footer */
     }
+
+    body {
+        font-size: 14px; /* Decrease font size */
+    }
+
+    .sidebar ul li a {
+        font-size: 12px; /* Smaller font size for links */
+    }
 }
 
 @media (max-width: 480px) {
     main {
         padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    body {
+        font-size: 12px; /* Further decrease font size */
+    }
+
+    .sidebar ul li a {
+        font-size: 10px; /* Smaller font size for links */
     }
 }
