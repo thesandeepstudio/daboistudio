@@ -1,3 +1,5 @@
+To make your layout responsive, you'll want to use media queries to adjust the styles based on the screen size. Here's an updated version of your CSS that includes responsiveness for the sidebar and main content:
+
 /* General Reset */
 * {
     margin: 0;
@@ -11,7 +13,7 @@ body {
     display: flex;
 }
 
-//* Sidebar Navigation */
+/* Sidebar Navigation */
 .sidebar {
     position: fixed;
     left: 0;
@@ -20,6 +22,7 @@ body {
     height: 100%;
     background-color: #fff;
     padding-top: 20px;
+    transition: width 0.3s;
 }
 
 .sidebar ul {
@@ -62,3 +65,30 @@ footer {
     margin-top: 20px;
     color: #333;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100px; /* Reduced width */
+    }
+
+    main {
+        margin-left: 120px; /* Adjust margin accordingly */
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 70px; /* Further reduced width */
+    }
+
+    main {
+        margin-left: 90px; /* Adjust margin accordingly */
+    }
+
+    .sidebar ul li a {
+        padding: 5px; /* Smaller padding for smaller screens */
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
