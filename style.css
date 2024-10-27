@@ -72,6 +72,7 @@ footer {
 
     main {
         margin-left: 0; /* Adjust main margin */
+        padding: 10px 15px; /* Add padding to the main content */
     }
 
     footer {
@@ -89,7 +90,7 @@ footer {
 
 @media (max-width: 480px) {
     main {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px 15px; /* Add padding for smaller screens */
     }
 
     body {
