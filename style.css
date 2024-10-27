@@ -1,4 +1,4 @@
-To make your layout responsive, you'll want to use media queries to adjust the styles based on the screen size. Here's an updated version of your CSS that includes responsiveness for the sidebar and main content:
+
 
 /* General Reset */
 * {
