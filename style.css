@@ -1,40 +1,64 @@
-body {
-    font-family: 'Source Code Pro', monospace;
-    line-height: 1.6;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-header {
-    background: #fff;
+/* Basic Layout */
+body {
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+}
+
+//* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
     color: #333;
-    padding: 10px 0;
-    text-align: center;
+    font-weight: 600;
+    display: block;
+    padding: 10px;
+    transition: color 0.3s, opacity 0.3s;
 }
 
-h1 {
-    margin: 0;
+.sidebar ul li a:hover {
+    color: #666; /* Dimmed color */
+    opacity: 0.7; /* Slightly transparent */
 }
 
-h2 {
-    color: #333;
-}
-
-section {
+/* Main Content */
+main {
+    margin-left: 220px; /* Space for the sidebar */
     padding: 20px;
-    margin: 10px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+/* Section Styling */
+.about, .experience, .skills, .projects {
+    margin-bottom: 40px;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #fff;
+    margin-top: 20px;
     color: #333;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
