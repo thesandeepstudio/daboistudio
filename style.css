@@ -79,7 +79,7 @@ footer {
     }
 
     body {
-        font-size: 14px; /* Decrease font size */
+        font-size: 10px; /* Decrease font size */
     }
 
     .sidebar ul li a {
@@ -93,7 +93,7 @@ footer {
     }
 
     body {
-        font-size: 12px; /* Further decrease font size */
+        font-size: 8px; /* Further decrease font size */
     }
 
     .sidebar ul li a {
