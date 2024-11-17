@@ -1,105 +1,296 @@
 /* General Reset */
 * {
-  margin: 0;
-  box-sizing: border-box;
-}
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic Layout */
+  body {
+    font-family: "Source Code Pro", monospace;
+  }
 
-/* Basic Layout */
-body {
-  font-family: "Source Code Pro", monospace;
-}
-
-/* Sidebar Navigation */
-.sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 200px;
-  height: 100%;
-  background-color: #fff;
-  padding-top: 20px;
-  transition: width 0.3s, visibility 0.3s;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin: 15px 0;
-}
-
-.sidebar ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  display: block;
-  padding: 10px;
-  transition: color 0.3s, opacity 0.3s;
-}
-
-.sidebar ul li a:hover {
-  color: #666; /* Dimmed color */
-  opacity: 0.7; /* Slightly transparent */
-}
-
-/* Main Content */
-main {
-  margin-left: 220px; /* Space for the sidebar */
-  padding: 20px;
-  flex-grow: 1;
-}
-
-/* Section Styling */
-.about,
-.experience,
-.skills,
-.projects {
-  margin-bottom: 40px;
-}
-
-footer {
-  text-align: center;
-  margin-top: 20px;
-  color: #333;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
+  .logo {
+    align-self: center;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: uppercase;
+    width: 100%;
+    padding-left: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  
+  /* Sidebar Navigation */
   .sidebar {
-    width: 0; /* Hide sidebar */
-    visibility: hidden; /* Ensure it doesn't interfere with layout */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 20px;
+    transition: width 0.3s, visibility 0.3s;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    transition: color 0.3s, opacity 0.3s;
+    padding-left: 30px;
+    margin: 10px;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #666; /* Dimmed color */
+    opacity: 0.7; /* Slightly transparent */
+  }
+
+  
+  
+  /* Main Content */
+  main {
+    margin-left: 220px; /* Space for the sidebar */
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  /* Section Styling */
+  .about,
+  .experience,
+  .skills,
+  .projects {
+    margin-bottom: 30px;
+  }
+
+  .clients {
+    border-bottom: 1px solid gray;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 40px 200px;
+  }
+
+  .clients h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+
+  .clients ul li {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+  .experience {
+    border-bottom: 1px solid gray;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 40px 200px;
+  }
+
+  .experience h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .experience h3 {
+    font-size: 12px;
+  }
+
+  
+  .experience p {
+    font-size: 12px;
+  }
+
+  .experience ul li {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+  .skills {
+    border-bottom: 1px solid gray;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 40px 200px;
+  }
+
+  .skills h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+
+  .skills ul li {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+  .tools {
+    border-bottom: 1px solid gray;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 40px 200px;
+  }
+
+  .tools h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+
+  .tools ul li {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+  .education {
+    border-bottom: 1px solid gray;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 40px 200px;
+  }
+
+  .education h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .education h3 {
+    font-size: 12px;
+  }
+
+  
+  .education p {
+    font-size: 12px;
+  }
+
+  .education ul li {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+  .social {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 40px 200px;
+  }
+
+  .social h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+
+  .social h3 {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+  .social h3 a{
+    text-decoration: none;
+    color: blue;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+  .social h3 a:hover{
+    color: purple;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 180px;
   }
 
   main {
-    margin-left: 0; /* Adjust main margin */
-    padding: 20px 25px; /* Add padding to the main content */
+    margin-left: 200px;
   }
 
-  footer {
-    display: none; /* Hide footer */
+  .logo {
+    font-size: 10px;
+    padding-left: 20px;
   }
 
-  body {
-    font-size: 12px; /* Decrease font size */
+  section {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 160px;
   }
 
-  .sidebar ul li a {
-    font-size: 12px; /* Smaller font size for links */
+  main {
+    margin-left: 180px;
+  }
+
+  .logo {
+    font-size: 9px;
+  }
+
+  section h2 {
+    font-size: 13px;
+  }
+
+  section p,
+  section ul li {
+    font-size: 11px;
   }
 }
 
 @media (max-width: 480px) {
+  .sidebar {
+    width: 0;
+    visibility: hidden;
+  }
+
+  .logo {
+    font-size: 8px;
+  }
+
   main {
-    padding: 20px 25px; /* Add padding for smaller screens */
+    margin-left: 0;
+    padding: 15px;
   }
 
-  body {
-    font-size: 10px; /* Further decrease font size */
+  section {
+    padding: 20px 10px;
   }
 
-  .sidebar ul li a {
-    font-size: 10px; /* Smaller font size for links */
+  section h2 {
+    font-size: 12px;
+  }
+
+  section p,
+  section ul li {
+    font-size: 10px;
   }
 }
