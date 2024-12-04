@@ -1,229 +1,220 @@
 /* General Reset */
 * {
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Basic Layout */
-  body {
-    font-family: "Source Code Pro", monospace;
-  }
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  .logo {
-    align-self: center;
-    font-size: 12px;
-    font-weight: 700;
-    text-decoration: uppercase;
-    width: 100%;
-    padding-left: 40px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-  }
-  
-  /* Sidebar Navigation */
-  .sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #fff;
-    padding-top: 20px;
-    transition: width 0.3s, visibility 0.3s;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  
-  .sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 12px;
-    font-weight: 400;
-    display: block;
-    transition: color 0.3s, opacity 0.3s;
-    padding-left: 30px;
-    margin: 10px;
-  }
-  
-  .sidebar ul li a:hover {
-    color: #666; /* Dimmed color */
-    opacity: 0.7; /* Slightly transparent */
-  }
+/* Basic Layout */
+body {
+  font-family: "Source Code Pro", monospace;
+}
 
-  
-  
-  /* Main Content */
-  main {
-    margin-left: 220px; /* Space for the sidebar */
-    padding: 20px;
-    flex-grow: 1;
-  }
-  
-  /* Section Styling */
-  .about,
-  .experience,
-  .skills,
-  .projects {
-    margin-bottom: 30px;
-  }
+.logo {
+  align-self: center;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: uppercase;
+  width: 100%;
+  padding-left: 40px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
 
-  .clients {
-    border-bottom: 1px solid gray;
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 40px 200px;
-  }
+/* Sidebar Navigation */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #fff;
+  padding-top: 20px;
+  transition: width 0.3s, visibility 0.3s;
+}
 
-  .clients h2 {
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
 
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+  transition: color 0.3s, opacity 0.3s;
+  padding-left: 30px;
+  margin: 10px;
+}
 
-  .clients ul li {
-    font-size: 12px;
-    font-weight: 400;
-    margin: 10px 0;
-  }
+.sidebar ul li a:hover {
+  color: #666; /* Dimmed color */
+  opacity: 0.7; /* Slightly transparent */
+}
 
-  .experience {
-    border-bottom: 1px solid gray;
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 40px 200px;
-  }
+/* Main Content */
+main {
+  margin-left: 220px; /* Space for the sidebar */
+  padding: 20px;
+  flex-grow: 1;
+}
 
-  .experience h2 {
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
+/* Section Styling */
+.about,
+.experience,
+.skills,
+.projects {
+  margin-bottom: 30px;
+}
 
-  .experience h3 {
-    font-size: 12px;
-  }
+.clients {
+  border-bottom: 1px solid gray;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 40px 200px;
+}
 
-  
-  .experience p {
-    font-size: 12px;
-  }
+.clients h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
-  .experience ul li {
-    font-size: 12px;
-    font-weight: 400;
-    margin: 10px 0;
-  }
+.clients ul li {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 0;
+}
 
-  .skills {
-    border-bottom: 1px solid gray;
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 40px 200px;
-  }
+.experience {
+  border-bottom: 1px solid gray;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 40px 200px;
+}
 
-  .skills h2 {
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
+.experience h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
+.experience h3 {
+  font-size: 12px;
+}
 
-  .skills ul li {
-    font-size: 12px;
-    font-weight: 400;
-    margin: 10px 0;
-  }
+.experience p {
+  font-size: 12px;
+}
 
-  .tools {
-    border-bottom: 1px solid gray;
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 40px 200px;
-  }
+.experience ul li {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 0;
+}
 
-  .tools h2 {
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
+.skills {
+  border-bottom: 1px solid gray;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 40px 200px;
+}
 
+.skills h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
-  .tools ul li {
-    font-size: 12px;
-    font-weight: 400;
-    margin: 10px 0;
-  }
+.skills ul li {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 0;
+}
 
-  .education {
-    border-bottom: 1px solid gray;
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 40px 200px;
-  }
+.tools {
+  border-bottom: 1px solid gray;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 40px 200px;
+}
 
-  .education h2 {
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
+.tools h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
-  .education h3 {
-    font-size: 12px;
-  }
+.tools ul li {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 0;
+}
 
-  
-  .education p {
-    font-size: 12px;
-  }
+.education {
+  border-bottom: 1px solid gray;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 40px 200px;
+}
 
-  .education ul li {
-    font-size: 12px;
-    font-weight: 400;
-    margin: 10px 0;
-  }
+.education h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
-  .social {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 40px 200px;
-  }
+.education h3 {
+  font-size: 12px;
+}
 
-  .social h2 {
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
+.education p {
+  font-size: 12px;
+}
 
+.education ul li {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 0;
+}
 
-  .social h3 {
-    font-size: 12px;
-    font-weight: 400;
-    margin: 10px 0;
-  }
-  .social h3 a{
-    text-decoration: none;
-    color: blue;
-    font-size: 12px;
-    font-weight: 400;
-    margin: 10px 0;
-  }
+.social {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 40px 200px;
+}
 
-  .social h3 a:hover{
-    color: purple;
-  }
-  
-  footer {
-    text-align: center;
-    margin-top: 20px;
-    color: #333;
-  }
-  
-  /* Responsive Design */
+.social h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.social h3 {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.social h3 a {
+  text-decoration: none;
+  color: blue;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.social h3 a:hover {
+  color: purple;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Responsive Design */
 @media (max-width: 1024px) {
   .sidebar {
     width: 180px;
