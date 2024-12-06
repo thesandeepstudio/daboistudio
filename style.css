@@ -53,12 +53,32 @@ body {
   opacity: 0.7; /* Slightly transparent */
 }
 
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: transform 0.3s;
+}
 /* Main Content */
 main {
   margin-left: 220px; /* Space for the sidebar */
   padding: 20px;
   flex-grow: 1;
+  padding-top: 60px;
 }
+
 
 /* Section Styling */
 .about,
@@ -209,39 +229,25 @@ main {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
-  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff; /* You can change the background color if needed */
   color: #333;
+  font-size: 12px;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .sidebar {
-    width: 180px;
-  }
-
-  main {
-    margin-left: 200px;
-  }
-
-  .logo {
-    font-size: 10px;
-    padding-left: 20px;
-  }
-
-  section {
-    padding: 30px 15px;
-  }
+footer p {
+  margin: 0;
 }
 
+
+/**/
 @media (max-width: 768px) {
-  .sidebar {
-    width: 160px;
-  }
-
-  main {
-    margin-left: 180px;
-  }
+    
 
   .logo {
     font-size: 9px;
@@ -255,33 +261,96 @@ footer {
   section ul li {
     font-size: 11px;
   }
-}
 
-@media (max-width: 480px) {
-  .sidebar {
-    width: 0;
-    visibility: hidden;
+  /* Hamburger Menu */
+  .hamburger {
+    display: block;
+    background-color: white; /* Red background for hamburger */
+    padding: 10px; /* Added padding for better clickability */
+    width: 100%; /* Full width */
+    position: fixed;
+    top: 0;
+    left: 0; /* Ensure it stretches from left to right */
+    z-index: 1001; /* Higher than other elements */
   }
 
-  .logo {
-    font-size: 8px;
+
+  .hamburger div { /* White color for hamburger lines */
+    width: 30px; /* Width of the hamburger lines */
+    height: 3px;
+    margin: 5px 0;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: 0; /* Sidebar will open from the right */
+    left: auto; /* Override left positioning */
+    width: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: width 0.3s, visibility 0.3s;
+  }
+
+  .sidebar.active {
+    width: 160px;
+    visibility: visible;
   }
 
   main {
-    margin-left: 0;
-    padding: 15px;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap; /* Wraps content to new row */
+    justify-content: space-around;
+}
+iframe {
+    width: 48%; /* Make iframes take up about 50% of the screen width */
+    margin: 10px 0; /* Adds margin between iframes */
+}
+
+.clients,
+  .experience,
+  .skills,
+  .tools,
+  .education,
+  .social {
+    max-width: 100%;
+    margin: 20px;
   }
 
-  section {
-    padding: 20px 10px;
-  }
-
-  section h2 {
+  .clients h2,
+  .experience h2,
+  .skills h2,
+  .tools h2,
+  .education h2,
+  .social h2 {
     font-size: 12px;
   }
 
-  section p,
-  section ul li {
+  .clients ul li,
+  .experience ul li,
+  .skills ul li,
+  .tools ul li,
+  .education ul li {
     font-size: 10px;
   }
+
+  .experience h3,
+  .skills h3,
+  .education h3 {
+    font-size: 10px;
+  }
+
+  .experience p,
+  .education p {
+    font-size: 10px;
+  }
+
+  .social h3 {
+    font-size: 10px;
+  }
+
+  .social h3 a {
+    font-size: 10px;
+  }
+
 }
